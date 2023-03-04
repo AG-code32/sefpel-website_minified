@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  --main-color:rgb(255, 187, 0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  /* color: rgba(12, 3, 27, 0.7); */
+  background: rgba(72, 12, 168, 0.1);
+  user-select: none;
+}
+
+
+nav {
+  width: 100vw;
+  height: 3.5rem;
+  /* position: fixed; */
+  /* z-index: inherit; */
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: black;
+  display: flex;
+  /* justify-content: center; */
+  /* color: white; */
+  /* display: grid; */
+  place-items: center;
+  box-shadow: 5px 0 2rem rgba(0, 0, 0, .5), 5px 5px 10rem rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 82%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+nav div button {
+  display: flex;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  align-items: center;
+  /* margin-top: 0.4rem; */
+  display: none;
+}
+
+nav div ul {
+  display: flex;
+
+  height: 100%;
+  gap: 1.2rem;
+  font-size: .7rem;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  align-items: center;
+}
+
+nav div ul li:nth-child(n) {
+  height: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  align-items: center;
+
+}
+
+nav div ul li:nth-child(3) div {
+  z-index: 8;
+  position: relative;
+  /* display: block; */
+}
+
+nav div ul li:nth-child(3) div ul {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background: white;
+  color: rgba(67, 64, 64, 0.659);
+
+  top: 1.2rem;
+  left: -0.7rem;
+  
+  gap: 0;
+  width: 14rem;
+  height: 350px;
+  border-radius: 2%;
+  
+}
+
+nav div ul li:nth-child(3) div ul li {
+  display: flex;
+  /* justify-items: center; */
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  /* height: 50px; */
+}
+
+nav div ul li:nth-child(3) div ul li:hover {
+  background: var(--main-color);
+  border-radius: 3px;
+}
+
+nav div ul li:nth-child(3) div ul li:hover a {
+  color: black;
+  /* font-weight: 400; */
+}
+
+nav div ul li:nth-child(3) div ul a {
+  display: flex;
+  /* justify-items: center; */
+  /* justify-content: center; */
+  align-items: center;
+  padding: .3rem 1rem;
+  width: 100%;
+  height: 100%;
+  color: rgba(67, 64, 64, 0.659);
+  /* font-weight: 500; */
+}
+
+nav a, 
+nav ul a {
+  color: white;
+}
+
+nav div ul li:hover a,
+nav div ul li:hover i {
+  color: var(--main-color);
+}
+
+.bxs-down-arrow {
+  color: white;
+}
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <title>SEFPEL</title>
+</head>
+<body>
+  
+  <nav>
+    <div class="container">
+      <a href="">SEFPEL</a>
+      
+      <ul id="nav__items">
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#company">EMPRESA</a></li>
+        <li class="box__service-list">
+          <div>
+            <a href="#services">SERVICIOS</a>
+            <i class='bx bxs-down-arrow'></i>
+            <ul class="services-list">
+              <li><a href="">Sistemas de red contra incendios</a></li>
+              <li><a href="">Sistemas de bombeo de presion constante y abastecimiento</a></li>
+              <li><a href="">Subestaciones eléctricas y transformadores</a></li>
+              <li><a href="">Climatizacion industrial</a></li>
+              <li><a href="">Mecanica general</a></li>
+              <li><a href="">Obras civiles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#products">PRODUCTOS</a></li>
+        <li><a href="#projects">PROYECTOS</a></li>
+        <li><a href="#blogs">BLOG</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+      </ul>
+
+      <button id="open__nav-btn"><i class='bx bx-menu'></i></button>
+      <button id="close__nav-btn"><i class='bx bx-x' ></i></button>
+
+    </div>
+  </nav>
+<!-- END OF NAV -->
+
+
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    
+    <div class="swiper-slide">
+      <img src="./images/Red-contra-incendios.jpg" />
+      <div></div>
+      <p>Sistemas de agua contra incendios</p>
+      <button>Saber más</button>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/Estaciones-de-bombeo.jpg" />
+      <div></div>
+      <p>Sistemas de bombeo de presión constante y abastecimiento</p>
+      <button>Saber más</button>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/grupos-electrogenos.jpg" />
+      <div></div>
+      <p>Transferencia automática y grupos electrógenos</p>
+      <button>Saber más</button>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/electricidad-industrial.jpg" />
+      <div></div>
+      <p>Subestaciones eléctricas y Transformadores</p>
+      <button>Saber más</button>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/Climatización.jpg" />
+      <div></div>
+      <p>Climatización Industrial</p>
+      <button>Saber más</button>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/mecánica-en-general.jpg" />
+      <div></div>
+      <p>Mecánica General</p>
+      <button>Saber más</button>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/construcción-civil-y-sanitaria.jpg" />
+      <div></div>
+      <p>Obras Civiles</p>
+      <button>Saber más</button>
+    </div>
+    
+  </div>
+  <!-- <div class="swiper-button-next"></div> -->
+  <!-- <div class="swiper-button-prev"></div> -->
+  <div class="swiper-pagination"></div>
+</div>
+<!-- END OF SWIPER -->
+
+
+
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="javascript/main.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      // autoplay: {
+      //   delay: 5000,
+      //   disableOnInteraction: false,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
