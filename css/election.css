@@ -174,6 +174,11 @@
 }
 
 /* =========== MEDIA QUERIES =============== */
+/* .container__election-card { */
+  /* width: 100%; */
+  /* height: 50%; */
+  /* background-size: 5rem 5rem contain; */
+/* } */
 @media screen and (max-width:600px) {
   .container__election-card_part01 {
     /* padding: 2.5rem 4rem 1.5rem 4rem; */
@@ -182,4 +187,9 @@
   .container__election-card_part01 h2 {
     font-size: 1.2rem;
   }
+  .container__election-card_part02 {
+    padding: 1.5rem 0;
+    gap: 1rem;
+  }
+
 }
