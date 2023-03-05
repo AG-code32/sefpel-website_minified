@@ -1,0 +1,185 @@
+#election {
+  width: 100vw;
+  height: 57vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  /* position: absolute; */
+  /* background-attachment: fixed; */
+}
+
+.container__election {
+  position: absolute;
+  width: 100%;
+
+}
+
+
+
+
+.container__election-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 57%;
+  color: white;
+  z-index: 4;
+  position: relative;
+
+  background: url(/images/servicios.jpg);
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-attachment: fixed;
+
+}
+
+.container__election-card .container__election-card_fill {
+  width: 100%;
+  height: 1rem;
+  background: white;
+}
+.container__election-card .container__election-card01 {
+  width: 100%;
+  padding: 1.2rem 10rem 1.5rem 10rem;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5));
+}
+.container__election-card .container__election-card02 {
+  width: 100%;
+  padding: 0rem 10rem 0rem 10rem;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5));
+}
+
+
+
+.container__election-card_part01 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: rgb(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  padding: 2.5rem 4rem 1.5rem 4rem;
+}
+.container__election-card_part01 h2 {
+  padding: 0 0 1.5rem 0;  
+}
+.container__election-card_part01 small {
+  font-size: 0.75rem;
+  padding: 0rem 0 2rem 0;  
+}
+.container__election-card_part01 div {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  padding: 0 0 0 0;  
+}
+.container__election-card_part01 div a {
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .5rem .7rem;
+  background: var(--main-color);
+  border-radius: 4px;
+  color: white;
+}
+
+
+
+
+.container__election-card_part02 {
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+  padding: 2.5rem 2rem;
+  /* padding-right: 3rem; */
+}
+.container__election-card_part02 h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container__election-card_part02 h4 span {
+  font-weight: bold;
+}
+.container__election-card_part02 h4 span span {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.container__election-card_part02 a {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  gap: .2rem;
+
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .5rem .7rem;
+  background: var(--main-color);
+  border-radius: 4px;
+  color: white;
+}
+.bx {
+  padding-top: 1.8px;
+}
+.container__election-card_part02 .bx::before {
+  /* display: flex;
+  align-items: center; */
+  font-size: 1rem;
+}
+
+/* =========== MEDIA QUERIES =============== */
+@media screen and (max-width:1024px) {
+  .container__election-card .container__election-card01 {
+    padding: .6rem 3rem .6rem 3rem;
+  }
+  .container__election-card .container__election-card02 {
+    padding: 0rem 3rem 0rem 3rem;
+  }
+}
+
+/* =========== MEDIA QUERIES =============== */
+@media screen and (max-width:800px) {
+  .container__election-card_part01 {
+    align-items: center;
+  }
+  .container__election-card_part01 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 11rem;
+    gap: .5rem;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    padding: 0 0 0 0;  
+  }
+  .container__election-card_part02 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* text-align: center; */
+    padding: 1.5rem 2rem;
+    text-align: center;
+    gap: .5rem;
+  }
+  .container__election-card_part02 a {
+    position: relative;
+    /* text-align: center; */
+    width: 11rem;
+    left: calc(50% - 5.5rem);
+  }
+  .container__election-card .container__election-card_fill {
+    height: .5rem;
+  }
+}
+
+/* =========== MEDIA QUERIES =============== */
+@media screen and (max-width:600px) {
+  .container__election-card_part01 {
+    /* padding: 2.5rem 4rem 1.5rem 4rem; */
+    padding: 2rem 1.2rem 1.2rem 1.2rem;
+  }
+  .container__election-card_part01 h2 {
+    font-size: 1.2rem;
+  }
+}

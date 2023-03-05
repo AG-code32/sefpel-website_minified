@@ -16,6 +16,14 @@ body {
 .swiper {
   width: 100vw;
   height: 88vh;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .swiper-slide {
