@@ -10,6 +10,9 @@
   box-sizing: border-box;
 
   --main-color:rgb(255, 187, 0);
+  /* --cards-color:rgb(170, 170, 170); */
+  --cards-color:#efefef;
+  --cards-color-hover:#ddd;
 }
 
 html {
@@ -20,7 +23,8 @@ body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   /* color: rgba(12, 3, 27, 0.7); */
-  background: rgba(72, 12, 168, 0.1);
+  /* background: rgba(72, 12, 168, 0.1); */
+  background: white;
   user-select: none;
 }
 

@@ -246,7 +246,7 @@ body {
 
   
   .swiper {
-    height: 35vh;
+    height: 45vh;
     /* width: 20%; */
   }
   .swiper-slide img {
@@ -255,27 +255,27 @@ body {
   .swiper-slide p {
     font-size: 1.3rem;
     width: 15rem;
-    top: 4rem;
+    top: 8rem;
     left: 2rem;
   }
   .swiper-slide:nth-child(2) p {
-    top: 2rem;
-    width: 80%;
+    top: 8rem;
+    width: 90%;
   }
   .swiper-slide:nth-child(3) p,
   .swiper-slide:nth-child(4) p {
-    top: 4rem;
+    top: 8rem;
     width: 20rem;
   }
   .swiper-slide:nth-child(5) p,
   .swiper-slide:nth-child(6) p,
   .swiper-slide:nth-child(7) p {
-    top: 6rem;
+    top: 10rem;
     width: 20rem;
   }
  
   .swiper-slide button {
-    top: 9rem !important;
+    top: 13rem !important;
     left: 2rem !important;
   }
 }
