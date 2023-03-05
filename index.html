@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/election.css">
+  <link rel="stylesheet" href="css/partners.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- Link Swiper's CSS -->
@@ -198,7 +199,24 @@
   
   <section id="partners">
     <div class="container__partners">
-      
+      <h2>Ellos confían en nosotros</h2>
+
+      <div class="container__partners-box">
+        <article class="container__partners-box_article">
+          <div><img src="./images/clients/jockey.png" alt=""></div>
+          <div><img src="./images/clients/San-fernando.png" alt=""></div>
+          <div><img src="./images/clients/mall-plaza.png" alt=""></div>
+          <div><img src="./images/clients/serpar.png" alt=""></div>
+          <div><img src="./images/clients/plaza-santa-catalina.png" alt=""></div>
+          <div><img src="./images/clients/levapan.png" alt=""></div>
+          <div><img src="./images/clients/engie-logo-1-2048x728.png" alt=""></div>
+          <div><img src="./images/clients/Logo_Parque_Arauco.svg-2048x1509.png" alt=""></div>
+          <div><img src="./images/clients/agustino-plaza.png" alt=""></div>
+          <div><img src="./images/clients/Lima_Metro_Linea_1.svg.png" alt=""></div>
+          <div><img src="./images/clients/interbank.png" alt=""></div>
+          <div><img src="./images/clients/redondos.png" alt=""></div>
+        </article>
+      </div>
       
       
     </div>
@@ -218,10 +236,11 @@
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       effect: "fade",
-      // autoplay: {
-      //   delay: 5000,
-      //   disableOnInteraction: false,
-      // },
+      // loop: "true",
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
