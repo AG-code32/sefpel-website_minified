@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-#services>h2 {
+#services > h2 {
   display: flex;
   justify-content: center;
   padding: 2rem 0 1rem;
@@ -19,14 +19,14 @@
   /* width: 100vw; */
 }
 
-#services .container {
+#services .container__services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 0 4rem 3rem 4rem;
   gap: 1rem;
 }
 
-#services .container article {
+#services .container__services article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,14 +38,14 @@
   height: 20rem;
 }
 
-#services .container article:hover {
+#services .container__services article:hover {
   background: var(--cards-color-hover);
 }
-#services .container article:hover .bx {
+#services .container__services article:hover .bx {
   color: var(--cards-color-hover);
 }
 
-#services .container article .bx {
+#services .container__services article .bx {
   /* display: flex; */
   /* justify-content: center; */
   /* position: absolute; */
@@ -61,7 +61,7 @@
   /* height: 16; */
 }
 
-#services .container article .bx::before {
+#services .container__services article .bx::before {
   /* height: 100%; */
   font-size: 2.5rem;
   /* position: absolute; */
@@ -69,7 +69,7 @@
   /* left: 42%; */
 }
 
-#services .container article div {
+#services .container__services article div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,10 +81,10 @@
   /* gap: .5rem; */
 }
 
-#services .container article div h4 {
+#services .container__services article div h4 {
   padding: 2rem 0 2rem 0;
 }
-#services .container article div small {
+#services .container__services article div small {
   padding: 2rem 0 1.5rem 0;
 }
 
@@ -106,23 +106,24 @@
   }
 }
 
+/* =========== MEDIA QUERIES =============== */
 @media screen and (max-width:720px) {
-  #services .container {
+  #services .container__services {
     grid-template-columns: repeat(1, 1fr);
-    padding: 0 0rem 3rem 0;
-    width: 90%;
+    padding: 0 2rem 3rem 2rem;
+    width: 100%;
   }
-  #services .container article div small {
+  #services .contcontainer__servicesainer article div small {
     padding: 2rem 1rem 1.5rem 1rem;
   }
-  #services .container article .bx {
+  #services .container__services article .bx {
     color: var(--cards-color);
     background: black;
     border-radius: 50%;
     padding: .8rem;
   }
   
-  #services .container article .bx::before {
+  #services .container__services article .bx::before {
     font-size: 1.8rem;
   }
 }
