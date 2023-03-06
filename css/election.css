@@ -181,6 +181,7 @@
   .container__election-card_part01 {
     /* padding: 2.5rem 4rem 1.5rem 4rem; */
     padding: 2rem 1.2rem 1.2rem 1.2rem;
+    border-radius: 10px;
   }
   .container__election-card_part01 h2 {
     font-size: 1.2rem;

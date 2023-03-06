@@ -7,6 +7,7 @@ const closeNavBtn = document.querySelector('#close__nav-btn')
 
 const mediaqueryList1440 = window.matchMedia("(max-width: 1440px)");
 const mediaqueryList1024 = window.matchMedia("(max-width: 1024px)");
+const mediaqueryList600 = window.matchMedia("(max-width: 600px)");
 
 // boxServiceList.addEventListener('mouseover', () => {
 //     serviceList.style.display = 'flex';
@@ -36,6 +37,11 @@ if (mediaqueryList1440.matches) {
     openNavBtn.style.display = 'none';
 }
 if (mediaqueryList1024.matches) {
+    navItems.style.display = 'none';
+    closeNavBtn.style.display = 'none';
+    openNavBtn.style.display = 'flex';
+}
+if (mediaqueryList600.matches) {
     navItems.style.display = 'none';
     closeNavBtn.style.display = 'none';
     openNavBtn.style.display = 'flex';
