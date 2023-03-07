@@ -31,7 +31,7 @@
 }
 
 #nav .container__nav > a {
-  color: white;
+  color: var(--main-color);
   font-size: 1.3rem;
 }
     
